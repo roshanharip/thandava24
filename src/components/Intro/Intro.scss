@@ -1,0 +1,19 @@
+.Intro{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Title{
+        height:50%;
+        width: 100%;
+        h1{
+            font-family: "Ibarra Real Nova", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-size: 150px !important;
+            font-style: normal;
+            text-align: center;
+        }
+    }
+}
