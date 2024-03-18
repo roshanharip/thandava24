@@ -8,21 +8,19 @@ import NavBar from './components/NavBar/NavBar';
 import ParticlesComponent from './config/particles';
 // import  ParticlesBg  from './config/particles';
 import { Route, Routes } from 'react-router';
+import Events from './router/Events/Events';
+import Landing from './router/Landing/Landing';
 const App = () => {
   return (
     <>
       <ParticlesComponent/>
       <Routes>
         <Route path='/' element={<NavBar/>} >
-          <Route index element={<Intro/>} />
-          <Route index element={<MyCarousel/>} />
-          <Route index element={<Contact/>}/>
+          <Route index element={<Landing/>} />
+          <Route path='/events' element={<Events/>} />
         </Route>
       </Routes>
-      <Intro/>
-      <MyCarousel />
-      <Contact />
-    </>
+      </>
   )
 }
 
