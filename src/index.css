@@ -2,4 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", serif;
+  overflow-x: hidden;
+  transition: all .3s;
+}
+body{
+  background-color: black;
+  color: white;
+}
+canvas{
+  z-index: -1;
+  
+}
+#root{
+  width: 100vw;
+  height: max-content;
 }
