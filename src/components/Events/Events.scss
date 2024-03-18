@@ -1,7 +1,7 @@
 .events {
 	margin: 0;
 	padding: 0 0 1rem 0;
-	overflow: hidden;
+	// overflow: hidden;
 	height: auto;
 	background-color: #0e0f0f82;
 }
@@ -14,7 +14,7 @@
 }
 
 .events_cards-container {
-	width: 1300px;
+	// width: 1300px;
 	position: relative;
 	margin: 30px;
 	position: relative;
@@ -27,18 +27,16 @@
 	background: #14121205;
 	border: 0.5px solid #00000010;
 	padding: 1%;
-	// overflow: hidden;
-
 
 	.cards-container {
 		display: grid;
 		justify-content: center;
-		align-content: center;
-		grid-template-columns: repeat( 3, minmax(250px, 1fr) );
+		align-items: center !important;
+		grid-template-columns: repeat(3, minmax(250px, 1fr));
 		gap: 1rem;
-		width: 100%;
-	// overflow: hidden;
-	padding: 0 0.5rem;
+		width: 100vw;
+				// overflow: hidden;
+		padding: 0 0 0 50px;
 
 		// padding: 3rem 0;
 
@@ -51,30 +49,36 @@
 			max-width: 325px;
 			max-height: 325px;
 			border-radius: 10px;
+			align-items: center;
 
 			img {
 				width: 100%;
 				height: 100%;
 				object-fit: fill;
+
 			}
 		}
 
 		.cards:hover {
 			transform: scale(1.05);
 			transition: 300ms ease;
-			box-shadow: 0px 0px 69px -10px rgba(255, 79, 79, 0.68);
+			-webkit-box-shadow: 7px 7px 22px 0px rgba(255,0,0,0.66);
+-moz-box-shadow: 7px 7px 22px 0px rgba(255,0,0,0.66);
+box-shadow: 7px 7px 22px 0px rgba(255,0,0,0.66);
 		}
 	}
 }
 
-@media  (max-width: 768px){
+@media (max-width: 768px) {
+
 	.events_cards-container {
 		flex-direction: column;
+
 		.cards-container {
-			grid-template-columns:repeat(1, minmax(150px, 1fr));
+			grid-template-columns: repeat(1, minmax(150px, 1fr));
 			gap: 0.5rem;
 			margin: 0;
+			width: 100%;
 		}
-
 	}
 }
