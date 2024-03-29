@@ -31,7 +31,7 @@ const Events = () => {
 						</a>
 					</div>
 					<div className="cards">
-						<a href="ttps://forms.gle/H8PBmk3xjMLv3ZWy7">
+						<a href="https://forms.gle/H8PBmk3xjMLv3ZWy7">
 							<img src={img3} alt="img3" />{" "}
 						</a>
 					</div>
